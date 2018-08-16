@@ -4,8 +4,8 @@ class PlaneObj extends BarrierInterface{
 	isPlayer:boolean = false;
 
 
-	constructor(frameX:number, frameY:number, frameWidth:number, frameHeight:number, a:number, isPlayer:boolean){
-		super(frameX, frameY, frameWidth, frameHeight, a);
+	constructor(bindObj:egret.DisplayObjectContainer, a:number, isPlayer:boolean){
+		super(bindObj, a);
 		this.isPlayer = isPlayer;
 	}
 }

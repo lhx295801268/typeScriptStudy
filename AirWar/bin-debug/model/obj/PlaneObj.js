@@ -8,13 +8,17 @@ var __extends = this && this.__extends || function __extends(t, e) {
 for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i]);
 r.prototype = e.prototype, t.prototype = new r();
 };
+/*// 飞机类*/
 var PlaneObj = (function (_super) {
     __extends(PlaneObj, _super);
-    function PlaneObj() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function PlaneObj(bindObj, a, isPlayer) {
+        var _this = _super.call(this, bindObj, a) || this;
+        // 是否为玩家飞机
+        _this.isPlayer = false;
+        _this.isPlayer = isPlayer;
+        return _this;
     }
-    PlaneObj.prototype.PlaneObj = function () {
-    };
     return PlaneObj;
 }(BarrierInterface));
 __reflect(PlaneObj.prototype, "PlaneObj");
+//# sourceMappingURL=PlaneObj.js.map

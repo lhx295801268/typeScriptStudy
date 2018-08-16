@@ -11,10 +11,19 @@
 		"libs/modules/promise/promise.js"
 	],
 	"game": [
-		"bin-debug/AssetAdapter.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/model/obj/BarrierInterface.js",
+		"bin-debug/layers/PlayerPlaneView.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
-		"bin-debug/ThemeAdapter.js"
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/layers/BarrierView.js",
+		"bin-debug/layers/BulletView.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/layers/TotalScreen.js",
+		"bin-debug/model/BeharviorDispose.js",
+		"bin-debug/model/interface/CallbackInterface.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/model/obj/BulletObj.js",
+		"bin-debug/model/obj/PlaneObj.js"
 	]
 }

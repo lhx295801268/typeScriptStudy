@@ -1,3 +1,4 @@
+/*// 子弹类*/
 var __reflect = (this && this.__reflect) || function (p, c, t) {
     p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
 };
@@ -10,12 +11,14 @@ r.prototype = e.prototype, t.prototype = new r();
 };
 var BulletObj = (function (_super) {
     __extends(BulletObj, _super);
-    function BulletObj() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function BulletObj(bindObj, a, bulletType) {
+        var _this = _super.call(this, bindObj, a) || this;
+        //子弹类型 0普通子弹
+        _this.bulletType = 0;
+        _this.bulletType = bulletType;
+        return _this;
     }
-    BulletObj.prototype.BulletObj = function () {
-        _this = _super.call(this) || this;
-    };
     return BulletObj;
 }(BarrierInterface));
 __reflect(BulletObj.prototype, "BulletObj");
+//# sourceMappingURL=BulletObj.js.map
